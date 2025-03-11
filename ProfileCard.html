@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #a8cff3;
+        }
+
+        .card {
+            background: rgb(19, 223, 162);
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #a8bbcf;
+        }
+
+        .name {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .designation {
+            color: #777;
+            font-size: 1em;
+        }
+
+        .bio {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 10px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./Ayush.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="name">Ayush Ghorpade</div>
+        <div class="designation">Associate Software Engineer</div>
+        <p class="bio">Hi, I'm Ayush,Skilled in devlopment and dedicated to delivering excellence.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank">&#x1F4C8;</a>
+            <a href="#" target="_blank">&#x1F4E7;</a>
+            <a href="#" target="_blank">&#x1F4F1;</a>
+        </div>
+    </div>
+</body>
+</html>
